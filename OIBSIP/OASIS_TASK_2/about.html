@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-image: url('background.jpg');
+      color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .about-container {
+      max-width: 800px;
+      background-color: #ffffff;
+      padding: 2rem;
+      box-shadow: 0px 0px 20px rgba(79, 95, 102, 0.1);
+      border-radius: 8px;
+    }
+
+    .about-header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .about-header h1 {
+      font-size: 2rem;
+      color: #5c67f2;
+    }
+
+    .about-header p {
+      font-size: 1rem;
+      color: #666;
+    }
+
+    .section {
+      margin-top: 1.5rem;
+    }
+
+    .section h2 {
+      font-size: 1.5rem;
+      color: #333;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid #2f3ad9;
+      padding-bottom: 0.3rem;
+      display: inline-block;
+    }
+
+    .qualifications, .certifications, .skills-list {
+      list-style-type: none;
+      margin-top: 1rem;
+    }
+
+    .qualifications li, .certifications li, .skills-list li {
+      padding: 0.5rem 0;
+      color: #444;
+      font-size: 1rem;
+      display: flex;
+      align-items: center;
+    }
+
+    .qualifications li::before, .certifications li::before, .skills-list li::before {
+      content: '✓';
+      color: #5c67f2;
+      margin-right: 8px;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 0.8rem;
+      margin-top: 1rem;
+    }
+
+    .skills-grid div {
+      background-color: #5662a9;
+      color:black;
+      padding: 0.8rem;
+      text-align: center;
+      border-radius: 5px;
+      font-size: 0.9rem;
+      transition: background-color 0.3s;
+    }
+
+    .skills-grid div:hover {
+      background-color: #d0d4f7;
+    }
+  </style>
+</head>
+<body>
+
+<div class="about-container">
+  <div class="about-header">
+    <h1>ABOUT ME</h1><br>
+    <h2>Maithri Pesaru</h2><br>
+    <h2>Web Developer | Data Scientist</h2><br>
+    <center>
+    <p>I am a highly skilled professional with a dual focus on web development and data science. My expertise lies in creating intuitive, responsive web applications and extracting actionable insights from complex data sets. With a strong foundation in programming languages like Python,Java.</p></center>
+  </div>
+
+  <div class="section">
+    <h2>Qualifications</h2>
+    <ul class="qualifications">
+      <li>Bachelor's in Computer Science -  VITS</li>
+      <li>Intermediate- Pragati junior college</li>
+      <li>Schooling- MVR IIT Academy</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Certifications</h2>
+    <ul class="certifications">
+      <li>Introduction to SQL - Udemy .</li>
+      <li> Advanced Google Analytics Professional Certificate .</li>
+      <li>JavaScript Bootcamp - Lets Upgrade .</li>
+      <li>Data Analysis with Python - IBM .</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div>HTML & CSS</div>
+      <div>JavaScript</div>
+      <div>Java</div>
+      <div>Python</div>
+      <div>SQL</div>
+      <div>Data Analysis</div>
+      <div>MS Excel</div>
+      <div>Node.js</div>
+      
+      
+    </div>
+  </div>
+
+<div class="section">
+    <h2>Achievements</h2>
+    <ul class="certifications">
+      <li>Awarded as District Topper in the Srinivasa Ramanujan Mathematics Olympiad(SRMO) exam.</li>
+      <li> Bronze Medalist in State-Level Fencing Tournament.</li>
+    
+    </ul>
+  </div>
+</div>
+
+</body>
+</html>
+

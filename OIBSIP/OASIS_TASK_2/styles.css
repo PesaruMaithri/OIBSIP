@@ -1,0 +1,150 @@
+/* General styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body, html {
+    height: 100%; /* Full height of the viewport */
+    margin: 0; /* Remove default margin */
+}
+
+/* Body styling for background image */
+body {
+    background-image: url('background.jpg'); /* Absolute local path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    color: #e0e0e0;
+}
+
+/* Sidebar styling */
+.sidebar {
+    width: 35%;
+    max-width: 300px;
+    background-color: rgba(31, 31, 31, 0.85); /* Slight transparency on dark sidebar */
+    color: #e0e0e0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    left: 0;
+}
+
+.profile-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #e0e0e0;
+    background-image: url('profile.jpg'); /* Placeholder profile image */
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 15px;
+}
+
+.name {
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin: 10px 0 20px;
+}
+
+.social-icons a {
+    color: #e0e0e0;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+/* Navigation menu */
+.nav-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #e0e0e0;
+    font-size: 1.2em;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.nav-item:hover {
+    background-color: #333333;
+}
+
+/* Main content styling */
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #e0e0e0;
+    text-align: center;
+    padding: 20px;
+    min-height: 100vh; /* Ensure full viewport height */
+    margin-left: 35%; /* To give space for the sidebar */
+}
+
+.main-content .name {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.role {
+    font-size: 1.8em;
+    margin-top: 10px;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        margin-bottom: 20px;
+    }
+    .main-content {
+        width: 100%;
+        margin-left: 0;
+        height: auto;
+        min-height: 100vh;  /* Ensure it still covers the full screen height on mobile */
+    }
+    .name {
+        font-size: 1.5em;
+    }
+    .role {
+        font-size: 1em;
+    }
+}
+.social-icons svg {
+    width: 30px;
+    height: 30px;
+    fill:#cdd1d2 ;
+    transition: fill 0.3s ease;
+}
+.social-icons a:hover svg {
+    fill: #1ea1c2; /* LinkedIn blue for hover */
+}
